@@ -13,15 +13,12 @@ const pool = mariadb.createPool({
 pool.getConnection()
     .then(conn => {
     
-      conn.query("SELECT d FROM texto")
+      conn.query("SELECT * FROM texto")
         .then((rows) => {
-          var string = rows[0];
-          console.log(string)
-
-        })
-        .then((res) => {
-          //console.log(res); // { affectedRows: 1, insertId: 1, warningStatus: 0 }
-          conn.end();
+          var about = JSON.stringify(rows[0]).substr(6,997);
+          console.log('The following text will be added to index.html')
+          console.log(about)
+          //document.getElementById('About').innerHTML = about;
         })
         .catch(err => {
           //handle error
