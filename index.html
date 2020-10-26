@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Luis Sandro González Solalinde</title>
-    <script src="databaseLink.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
@@ -36,7 +35,6 @@
    <div class="container" style="background-color:#FBF3F2; ">
     <h1 style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">About me.</h1>
     <p style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" id = About>
-      My name is Luis sandro González Solalinde. I am currently studying digital systems and robotics engineering at Tecnológico de Monterrey. Ever since I was young I have had a deep interest in technology. I am curious and passionate about learning new things. I started programming when I joined my high schools robotics team in 2015. While I was there I became passionate about solving problems through tehcnology. Though I was in the programming division of the team, I was intrigued at how a robot could take my code and do exactly what I told it. It was at this moment that I knew I would not be a software engineer, but a computer engineer. I am interested in embedded systems development, internet of things (IoT), and machine learning. I am skilled in digital and analog circuit design, programming, graphic design, video editing, and project management. I am also experienced in leadership, mentorship, education, resource management, publicity through social media, and document translation.
     </p>
     <img alt="Circuits" src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"  style="margin-left: auto; margin-right: auto; display: block; width: 50%;">
     <br>
@@ -45,32 +43,7 @@
      <!--Education-->
    <div class="container" style="background-color:#FBF3F2; text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" id = Education>
     <h1 style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Education.</h1>
-    <p style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-      Bilingual Diploma Programme (08/2015 - 05/2017)<br>
-      International Bachalaureate Organization
-      <ul style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-        <li>
-          Score: 29 points
-        </li>
-        <li>
-          Higher Level Business and Management
-        </li>
-        <li>
-          Higher Level Design Technologies
-        </li>
-        <li>
-          Higher Level Literature (English and Spanish)
-        </li>
-      </ul>  
-      Digital Systems and Robotics Engineering (08/2017 - Present)<br>
-      Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Monterrey
-      
-      <ul style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-        <li>
-          Expected Graduation Date: December 2021
-        </li>
-      </ul> 
-      
+    <p style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" id = edu>
     </p>
     <br>
     </div>
@@ -181,20 +154,7 @@
    <div class="container" style="background-color:#FBF3F2;" id = Achievements>
     <h1 style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Achievements.</h1>
     <p style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-      <ul style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-        <li>
-          FIRST Robotics Competition Mexico City Regional Champion (03/2016)
-        </li>
-        <li>
-          Second Place at Hack N' Jam Hackathon (04/2015)
-        </li>
-        <li>
-          Member of Digital Systems and Robotics Engineering Student Society (SAISD) (08/2018 - 05/2019)      
-
-        </li>
-        <li>
-          Member of the publicity comittee of CONNECT, the largest technology congress organized by students in Latin America (10/2018)
-        </li>
+      <ul style="text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" id = ach>
       </ul>
     </p>
     <br>
@@ -241,9 +201,11 @@
     ]
   }
 })
-</script>    
+</script>  
 <script>
-  s();
+  document.getElementById("About").innerText = "My name is Luis sandro González Solalinde. I am currently studying digital systems and robotics engineering at Tecnológico de Monterrey. Ever since I was young I have had a deep interest in technology. I am curious and passionate about learning new things. I started programming when I joined my high schools robotics team in 2015. While I was there I became passionate about solving problems through tehcnology. Though I was in the programming division of the team, I was intrigued at how a robot could take my code and do exactly what I told it. It was at this moment that I knew I would not be a software engineer, but a computer engineer. I am interested in embedded systems development, internet of things (IoT), and machine learning. I am skilled in digital and analog circuit design, programming, graphic design, video editing, and project management. I am also experienced in leadership, mentorship, education, resource management, publicity through social media, and document translation.";
+  document.getElementById("ach").innerHTML ="<li>FIRST Robotics Competition Mexico City Regional Champion (03/2016)</li><li>Second Place at Hack N' Jam Hackathon (04/2015)</li><li>Member of Digital Systems and Robotics Engineering Student Society (SAISD) (08/2018 - 05/2019)      </li><li>Member of the publicity comittee of CONNECT, the largest technology congress organized by students in Latin America (10/2018)</li>";
+  document.getElementById("edu").innerHTML ="Bilingual Diploma Programme (08/2015 - 05/2017)<br>International Bachalaureate Organization<ul style=\"text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif\"><li>Score: 29 points</li><li>Higher Level Business and Management</li><li>Higher Level Design Technologies</li><li>Higher Level Literature (English and Spanish)</li></ul>  Digital Systems and Robotics Engineering (08/2017 - Present)<br>Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Monterrey<ul style=\"text-align: justify;color:#032539; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif\"><li>Expected Graduation Date: December 2021</li></ul>";
 </script>
-  </body>
+</body>
 </html>
